@@ -1,0 +1,141 @@
+$mainColor: rgba(175, 215, 249, 0.51);
+
+.mainHeader {
+    width: 100%;
+    height: 80px;
+    background: $mainColor;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    z-index: 999;
+    transition: all .4s , background 0s;
+     animation-fill-mode: forwards;
+    
+    h1 {
+        font-size: 32px;
+        font-variant: small-caps;
+        color: darken($mainColor, 60%)
+    }
+    nav {
+        width: 20%;
+        height: 100%;
+        line-height: 80px;
+        
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: white;
+        
+    }
+    
+    nav ul li a {
+        font-family: BPGExtraSquare;
+        font-size: 16px;
+    }
+    nav ul li {
+        transition: background .4s;
+        &:hover {
+        background: lighten($mainColor, 3%);
+    }
+    }
+  
+}
+
+.mainSlider {
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    h2 {
+        position: absolute;
+       width: 100%;
+        text-align: center;
+        font-size: 64px;
+        top: 40%;
+        color: white;
+        font-family: 'Modak', cursive;
+    }
+    
+    p {
+        position: absolute;
+        width: 80%;
+        text-align: center;
+        left: 10%;
+        top: 50%;
+        font-size: 30px;
+        color: white;
+        font-family: mtav;
+    }
+    
+}
+
+.aboutTb {
+    width: 100%;
+    height: 80px;
+    position: relative;
+   display: flex;
+    justify-content: center;
+    
+    h2 {
+        width: 20%;
+        text-align: center;
+        font-size: 40px;line-height: 80px;
+        color: darken($mainColor,100%);
+        position: relative;
+        background: white;
+      
+        
+      
+    }
+     &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: $mainColor;
+        top: calc(50% - 1px);
+         z-index: -1;
+
+    }
+    
+}
+
+@keyframes forHeader {
+   
+    from {
+        width: 100%;
+        left: 0;
+        
+    }
+
+    to {
+        width: 90%;
+        left: 5%;
+    }
+}
+
+.images {
+    width: 90%;
+    overflow: hidden;
+    margin-left: 5%;
+    column-count: 4;
+ 
+column-gap: 20px; 
+    -moz-column-gap: 5px; 
+    
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+    
+}
