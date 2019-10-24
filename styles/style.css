@@ -19,9 +19,9 @@
   overflow: hidden;
   position: absolute;
   z-index: 999;
-  -webkit-transition: all .4s , background 0s;
-  -o-transition: all .4s , background 0s;
-  transition: all .4s , background 0s;
+  -webkit-transition: all .4s, background 0s;
+  -o-transition: all .4s, background 0s;
+  transition: all .4s, background 0s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
   .mainHeader h1 {
@@ -29,9 +29,8 @@
     font-variant: small-caps;
     color: rgba(8, 63, 110, 0.51); }
   .mainHeader nav {
-    width: 20%;
-    height: 100%;
-    line-height: 80px; }
+    width: auto;
+    height: 100%; }
   .mainHeader nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -43,14 +42,30 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    color: white; }
+    color: white;
+    height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
   .mainHeader nav ul li a {
     font-family: BPGExtraSquare;
     font-size: 16px; }
   .mainHeader nav ul li {
     -webkit-transition: background .4s;
     -o-transition: background .4s;
-    transition: background .4s; }
+    transition: background .4s;
+    padding: 0 20px;
+    word-wrap: break-word;
+    height: 100%;
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
     .mainHeader nav ul li:hover {
       background: rgba(189, 222, 250, 0.51); }
 
@@ -91,11 +106,11 @@
   -ms-flex-pack: center;
   justify-content: center; }
   .aboutTb h2 {
-    width: 20%;
+    width: 15%;
     text-align: center;
     font-size: 40px;
     line-height: 80px;
-    color: rgba(0, 0, 0, 0.51);
+    color: rgba(10, 77, 133, 0.51);
     position: relative;
     background: white; }
   .aboutTb::after {

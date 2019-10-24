@@ -11,7 +11,7 @@ window.onscroll = function (){
          $mainHeader.style.backgroundImage = 'url(images/geo.png)';
          $mainHeader.style.backgroundSize = '220px 80px';
          $mainHeader.style.backgroundRepeat = 'no-repeat';
-         $mainHeader.style.backgroundPosition = 'center';
+         $mainHeader.style.backgroundPosition = '270px 0';
     $ul.style.color = 'rgba(8, 63, 110, 0.51)';
     
    
