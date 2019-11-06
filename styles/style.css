@@ -28,6 +28,9 @@
     top: -200%;
     transition: all .4s;
   }
+  .mainHeader .burgerer {
+    display: none;
+  }
   .mainHeader .open {
     top: 80px;
   }
@@ -159,7 +162,23 @@
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover; }
-
+    .images img:hover {
+      animation: imgHover .8s ease-in;
+     
+    }
+    @keyframes imgHover {
+      0% {transform: skew(0);}
+      20% {transform: skew(-5deg) rotateX(-20deg);}
+      40%{transform: skew(5deg) rotateX(20deg);}
+      60% {transform: skew(-10deg) rotateX(-40deg);}
+      70%{transform: skew(10deg) rotateX(40deg);}
+      100% {transform: skew(0);}
+    }
+    @media screen and (max-width:769px){
+      .images {
+        column-count: 2;
+      }
+    }
     @media screen and (max-width:425px){
       .mainHeader .burgerer {
         display: block;
