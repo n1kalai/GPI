@@ -24,6 +24,13 @@
   transition: all .4s, background 0s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
+  .mainHeader .burger {
+    top: -200%;
+    transition: all .4s;
+  }
+  .mainHeader .open {
+    top: 80px;
+  }
   .mainHeader h1 {
     font-size: 32px;
     font-variant: small-caps;
@@ -152,3 +159,55 @@
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover; }
+
+    @media screen and (max-width:425px){
+      .mainHeader .burgerer {
+        display: block;
+        font-weight: 900;
+        font-size: 25px;
+        color: white;
+      }
+      .mainHeader nav ul {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        background: rgb(175, 215, 249);
+        justify-content: flex-start;
+        top: -100%;
+      }
+      .mainHeader nav ul li {
+        height: auto;
+        /* margin-top: 20px; */
+        width: 100%;
+        padding: 10px 0;
+      }
+      .mainSlider h2 {
+        font-size: 25px;
+        top: 28%;
+        
+      }
+      .mainSlider p {
+        font-size: 20px;
+        top: 40%;
+        width: 100%;
+        left: 0;
+      }
+      .aboutTb h2 {
+        width: 50%;
+      }
+      .images {
+        width: 90%;
+        overflow: hidden;
+        margin-left: 5%;
+        column-count: 1;
+        -webkit-column-count: 1;
+      }
+
+    }
