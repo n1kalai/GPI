@@ -1,0 +1,65 @@
+@import "variables";
+
+body {
+    background-image: url("../images/regback.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 100%;
+} 
+.mainHeader {
+background-color: transparent;
+h1 {
+    color: white;
+}
+}
+.myForm {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 120px; 
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      height: 90%;
+      overflow: auto;
+      background: rgba(230, 205, 173, 0.77);
+      padding: 30px;
+      
+
+      input {
+        margin-bottom: 15px;
+        height: 30px;
+        width: 100%;
+        max-width: 300px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        border-bottom: solid 1px white;
+        &::placeholder {
+            font-weight: bolder;
+            font-size: 15px;
+            color: hsla;
+            font-family: mtav;
+        }
+
+       
+      } 
+
+      button {
+        width: 150px;
+        height: 30px;
+        color: white;
+        background: rgba(230, 205, 173, 0.97);
+        font-family: BPGExtraSquare;
+        margin-top: 30px;
+        cursor: pointer;
+        align-self: flex-end;
+        border: solid 1px white;
+       border-radius:4px ;
+       outline:none;
+       transform: skew(-10deg);
+    }
+
+      
+   
+}
