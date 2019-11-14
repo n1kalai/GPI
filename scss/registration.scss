@@ -45,6 +45,13 @@ h1 {
        
       } 
 
+      .forEmail {
+          align-self: flex-end;
+          color: red;
+          opacity: 0;
+          transition: color 0s, opacity .8s;
+      }
+
       button {
         width: 150px;
         height: 30px;

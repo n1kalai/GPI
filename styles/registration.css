@@ -57,6 +57,14 @@ body {
       font-size: 15px;
       color: hsla;
       font-family: mtav; }
+  .myForm .forEmail {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    color: red;
+    opacity: 0;
+    -webkit-transition: color 0s, opacity .8s;
+    -o-transition: color 0s, opacity .8s;
+    transition: color 0s, opacity .8s; }
   .myForm button {
     width: 150px;
     height: 30px;
