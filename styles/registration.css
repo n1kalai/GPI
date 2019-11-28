@@ -11,8 +11,8 @@ body {
     color: white; }
 
 .myForm {
-  width: 30%;
-  margin-left: 35%;
+  width: 40%;
+  margin-left: 30%;
   margin-top: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,11 +21,13 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   height: 90%;
-  overflow: auto;
   background: rgba(230, 205, 173, 0.77);
   padding: 30px; }
   .myForm input {
@@ -57,6 +59,40 @@ body {
       font-size: 15px;
       color: hsla;
       font-family: mtav; }
+  .myForm .myForm__forPassword {
+    width: 74%;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+    list-style-type: square; }
+  .myForm .myForm__lists {
+    position: absolute;
+    right: -100px;
+    top: 0;
+    list-style-type: disc;
+    list-style: square;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .myForm .myForm__lists li {
+    font-size: 12px;
+    color: red;
+    opacity: 0;
+    -webkit-transition: color .4s, opacity 1s;
+    -o-transition: color .4s, opacity 1s;
+    transition: color .4s, opacity 1s;
+    list-style: square; }
   .myForm .forEmail {
     -ms-flex-item-align: end;
     align-self: flex-end;

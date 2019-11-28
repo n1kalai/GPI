@@ -14,16 +14,17 @@ h1 {
 }
 }
 .myForm {
-    width: 30%;
-    margin-left: 35%;
+    width: 40%;
+    margin-left: 30%;
     margin-top: 120px; 
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items:center;
       height: 90%;
-      overflow: auto;
       background: rgba(230, 205, 173, 0.77);
       padding: 30px;
+  
       
 
       input {
@@ -41,10 +42,39 @@ h1 {
             color: hsla;
             font-family: mtav;
         }
-
+        
        
       } 
+      .myForm__forPassword {
+        width: 74%;
+        position: relative;
+       margin: 0 auto;
+       width: 100%;
+       max-width: 300px;
+       list-style-type: square;
+        
+     }
 
+     .myForm__lists {
+       position: absolute;
+       right: -100px;
+       top: 0;
+       list-style-type: disc;
+       list-style: square;
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: flex-start;
+      
+     }
+
+     .myForm__lists li {
+       font-size: 12px;
+       color: red;
+       opacity: 0;
+       transition: color .4s, opacity 1s;
+       list-style: square;
+     }
       .forEmail {
           align-self: flex-end;
           color: red;
