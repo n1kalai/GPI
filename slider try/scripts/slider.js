@@ -6,13 +6,13 @@ prev.addEventListener('click',previous);
 next.addEventListener('click',nexter);
 let imagesArray = [...images];
 
-    overlay.addEventListener('mouseover',() => {
-        clearInterval(nexter);
-        console.log('xaxax');
-    })
-    overlay.addEventListener('mouseout', () => {
-        
-    })
+    // overlay.addEventListener('mouseover',() => {
+    //     clearInterval(nexter);
+    //     console.log('xaxax');
+    // })
+    // overlay.addEventListener('mouseout', () => {
+
+    // })
 
 
 let overoll = 0;
@@ -35,24 +35,29 @@ function previous(e) {
     if(count < imagesArray.length) {
         next.addEventListener('click',nexter);
     } 
-     if  (count === 1) {
-        prev.removeEventListener('click',previous);
-    }
+   
     console.log(count)
 }   
+if  (count === 1) {
+    prev.removeEventListener('click',previous);
+}
 let trustMe = true;
 setInterval(() => {
    if (trustMe) {
        nexter();
        if (count === 4) {
            trustMe = false;
+           next.removeEventListener('click',nexter);
        }
    } else if (count <= 4){
        previous();
    }
 
    if (count === 1) {
+    prev.removeEventListener('click',previous);
        trustMe = true;
+       nexter();
+      
    }
 },2500)
    
