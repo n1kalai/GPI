@@ -1,0 +1,16 @@
+.slider {
+    width: 1200px;
+    overflow: hidden;
+    height: 600px;
+    margin: 0 auto;
+}
+.slider .overlay {
+    width: 4800px;
+    transition: all 1s;
+}
+.slider img {
+    float: left;
+    height: 100%;
+    width: 1200px;
+    transition: all 1s;
+}
