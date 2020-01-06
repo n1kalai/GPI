@@ -61,37 +61,74 @@ $mainColor: rgba(175, 215, 249, 0.51);
 
 }
 
-.mainSlider {
-    height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-
-    h2 {
-        position: absolute;
-        width: 100%;
-        text-align: center;
-        font-size: 64px;
-        top: 40%;
-        color: white;
-        font-family: 'Modak', cursive;
-    }
-
-    p {
-        position: absolute;
-        width: 80%;
-        text-align: center;
-        left: 10%;
-        top: 50%;
-        font-size: 30px;
-        color: white;
-        font-family: mtav;
-    }
-
+.languages {
+    position: fixed;
+    right: -90px;
+    top: 100px;
+    width: 140px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    transition: all .4s;
 }
+.languages img {
+    height: 38px;
+    width: 38px;
+}
+
+.languages img:hover {
+    transform: scale(1.2);
+}
+
+.languages:hover {
+    right: 10px;
+}
+
+.slider {
+    width: 100%;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .overlay {
+        transition: all .4s;
+    }
+}
+// .mainSlider {
+//     height: 100vh;
+//     width: 100%;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-attachment: fixed;
+//     position: relative;
+
+//     h2 {
+//         position: absolute;
+//         width: 100%;
+//         text-align: center;
+//         font-size: 64px;
+//         top: 40%;
+//         color: white;
+//         font-family: 'Modak', cursive;
+//     }
+
+//     p {
+//         position: absolute;
+//         width: 80%;
+//         text-align: center;
+//         left: 10%;
+//         top: 50%;
+//         font-size: 30px;
+//         color: white;
+//         font-family: mtav;
+//     }
+
+// }
 
 .aboutTb {
     width: 100%;

@@ -6,7 +6,8 @@ let secLi = ol.children[1];
 let thirdLi = ol.children[2];
 
 passwordField.addEventListener('input',passwordCheck);
-passwordField.addEventListener('blur',function(x){ol.style.opacity = 0});
+// passwordField.addEventListener('blur',function(x){ol.style.opacity = 0});
+passwordField2.addEventListener('blur',passwordsMatches);
 
 function passwordCheck() {
 if (!passwordField.value.match(/[a-z]/)){
@@ -27,7 +28,7 @@ if (!passwordField.value.match(/[A-Z]/)) {
     firstLi.style.color = 'green';
     firstLi.style.opacity = 0;
 }
-if (!passwordField.value.match(/[1-9]/)){
+if (!passwordField.value.match(/[0-9]/)){
     ol.style.opacity = 1;
     secLi.style.opacity = 1;
     secLi.style.color = 'red'
@@ -38,9 +39,9 @@ if (!passwordField.value.match(/[1-9]/)){
 }
     
 }
-passwordField2.addEventListener('blur',passwordsMatches);
+
 function passwordsMatches(x){
     if (passwordField.value !== passwordField2.value){
-        alert('parolebi ar emtxveva')
+        alert('parolebi ar emtxveva');
     }
 }
