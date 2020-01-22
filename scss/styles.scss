@@ -1,5 +1,7 @@
 $mainColor: rgba(175, 215, 249, 0.51);
-
+html {
+    scroll-behavior: smooth;
+}
 .mainHeader {
     width: 100%;
     height: 80px;
@@ -98,37 +100,6 @@ $mainColor: rgba(175, 215, 249, 0.51);
         transition: all .4s;
     }
 }
-// .mainSlider {
-//     height: 100vh;
-//     width: 100%;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-attachment: fixed;
-//     position: relative;
-
-//     h2 {
-//         position: absolute;
-//         width: 100%;
-//         text-align: center;
-//         font-size: 64px;
-//         top: 40%;
-//         color: white;
-//         font-family: 'Modak', cursive;
-//     }
-
-//     p {
-//         position: absolute;
-//         width: 80%;
-//         text-align: center;
-//         left: 10%;
-//         top: 50%;
-//         font-size: 30px;
-//         color: white;
-//         font-family: mtav;
-//     }
-
-// }
 
 .aboutTb {
     width: 100%;
@@ -193,7 +164,150 @@ $mainColor: rgba(175, 215, 249, 0.51);
     }
 
 }
+.aboutCompany {
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+h3 {
+    float: left;
+    font-family: BPGExtraSquare;
+    font-weight: 900;
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: teal;
+    position: relative;
+   
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 5px;
+        width: 50px;
+        background-color: lighten(yellow,0.3);
 
-@media screen and (max-width: 425px){
+    } 
+
     
+    
+}
+
+    h2 {
+        width: 100%;
+        font-size: 18px;
+        font-family: BPGExtraSquare;
+        text-align: justify;
+        color: teal;
+
+        &::selection {
+            color: white;
+            background-color: darken(teal,0.4%);
+          }
+    }
+
+    &:nth-child(odd) h3 {
+      text-align: right;
+      &::after {
+        left: auto;  
+        right: 0;
+      }
+    }
+}
+
+.authenticate {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    background-image: url('https://wikitravel.org/upload/shared//c/c7/Tbilisi_banner.jpg');
+    margin: 0 auto;
+    justify-content: flex-end;
+    height: 250px;
+    border-radius: 4px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    position: relative;
+    h2 {
+        flex: 1;
+        font-size: 45px;
+        color: rgba(228, 231, 16, 0.964);
+        text-align: center;
+        line-height: 260px;
+        font-family: mtav;
+    }
+    form {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        font-family: BPGExtrasquare;
+        color: white;
+        z-index: 999;
+        * {
+            width: 200px;
+            border-radius: 10px;
+            height: 39px;
+            border: none;
+            outline: none;
+            padding-left: 10px;
+
+            &::placeholder {
+                color: teal;
+                font-size: 16px;
+                font-family: BPGExtrasquare;
+            }
+        }
+
+        button {
+            color: teal;
+            font-family: BPGExtrasquare;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+      
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: rgba(228, 231, 16, 0.364);
+        right: -20%;
+        z-index: 1;
+        width: 70%;
+        transform: skew(-120deg);
+        height: 100%;
+            }
+}
+
+.mainFooter {
+    width: 100%;
+    height: 200px;
+    background-color: teal;
+    text-align: center;
+    line-height: 200px;
+    font-size: 25px;
+    color: white;
+}
+
+@media screen and (max-width: 770px){
+
+    .authenticate{ 
+        form {
+            width: 100%;
+        }
+
+        h2 {
+            display: none;
+        }
+
+        &::after{
+        content: none;
+    }}
+    
+   
 }

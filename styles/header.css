@@ -81,3 +81,29 @@
       .mainHeader nav ul li:hover {
         background: rgba(189, 222, 250, 0.51); }
   
+@media screen and (max-width: 770px) {
+
+
+      .mainHeader h1 {
+            width: 100%;
+            text-align: center;
+        }
+
+      .mainHeader .burgerer {
+        display: block;
+        color: white;
+        font-size: 30px;
+      }
+      .mainHeader nav {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: teal;
+            top: -120%;
+        }
+      .mainHeader .open ul {
+          flex-direction: column;
+      }
+
+    }

@@ -1,5 +1,6 @@
 let $mainHeader = document.querySelector('.mainHeader');
-let $ul = document.querySelector('.mainHeader ul');
+let $ul = document.querySelector('.mainHeader nav');
+
 let $burgerer = document.querySelector('.burgerer');
 
 //console.log($gia[0])

@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; }
+
 .mainHeader {
   width: 100%;
   height: 80px;
@@ -171,3 +174,154 @@
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover; }
+
+.aboutCompany {
+  width: 90%;
+  margin: 100px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .aboutCompany h3 {
+    float: left;
+    font-family: BPGExtraSquare;
+    font-weight: 900;
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: teal;
+    position: relative; }
+    .aboutCompany h3::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 5px;
+      width: 50px;
+      background-color: #ffff02; }
+  .aboutCompany h2 {
+    width: 100%;
+    font-size: 18px;
+    font-family: BPGExtraSquare;
+    text-align: justify;
+    color: teal; }
+    .aboutCompany h2::-moz-selection {
+      color: white;
+      background-color: #007e7e; }
+    .aboutCompany h2::selection {
+      color: white;
+      background-color: #007e7e; }
+  .aboutCompany:nth-child(odd) h3 {
+    text-align: right; }
+    .aboutCompany:nth-child(odd) h3::after {
+      left: auto;
+      right: 0; }
+
+.authenticate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 90%;
+  background-image: url("https://wikitravel.org/upload/shared//c/c7/Tbilisi_banner.jpg");
+  margin: 0 auto;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  height: 250px;
+  border-radius: 4px;
+  margin-bottom: 100px;
+  overflow: hidden;
+  position: relative; }
+  .authenticate h2 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 45px;
+    color: rgba(228, 231, 16, 0.964);
+    text-align: center;
+    line-height: 260px;
+    font-family: mtav; }
+  .authenticate form {
+    width: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    font-family: BPGExtrasquare;
+    color: white;
+    z-index: 999; }
+    .authenticate form * {
+      width: 200px;
+      border-radius: 10px;
+      height: 39px;
+      border: none;
+      outline: none;
+      padding-left: 10px; }
+      .authenticate form *::-webkit-input-placeholder {
+        color: teal;
+        font-size: 16px;
+        font-family: BPGExtrasquare; }
+      .authenticate form *:-ms-input-placeholder {
+        color: teal;
+        font-size: 16px;
+        font-family: BPGExtrasquare; }
+      .authenticate form *::-ms-input-placeholder {
+        color: teal;
+        font-size: 16px;
+        font-family: BPGExtrasquare; }
+      .authenticate form *::placeholder {
+        color: teal;
+        font-size: 16px;
+        font-family: BPGExtrasquare; }
+    .authenticate form button {
+      color: teal;
+      font-family: BPGExtrasquare;
+      font-size: 14px;
+      cursor: pointer; }
+  .authenticate::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(228, 231, 16, 0.364);
+    right: -20%;
+    z-index: 1;
+    width: 70%;
+    -webkit-transform: skew(-120deg);
+    -ms-transform: skew(-120deg);
+    transform: skew(-120deg);
+    height: 100%; }
+
+.mainFooter {
+  width: 100%;
+  height: 200px;
+  background-color: teal;
+  text-align: center;
+  line-height: 200px;
+  font-size: 25px;
+  color: white; }
+
+@media screen and (max-width: 770px) {
+  .authenticate form {
+    width: 100%; }
+  .authenticate h2 {
+    display: none; }
+  .authenticate::after {
+    content: none; } }
